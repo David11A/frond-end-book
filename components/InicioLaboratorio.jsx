@@ -2,9 +2,14 @@ import React from 'react'
 import "./styles.css";
 import { CardUniversidades } from './CardUniversidades';
 import { Header } from './Header';
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 export const InicioLaboratorio = () => {
+
+
+
+  
 
   const navegar = useNavigate();
 

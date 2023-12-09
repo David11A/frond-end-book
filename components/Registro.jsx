@@ -19,10 +19,10 @@ export const Registro = () => {
         setDataFormulario({ ...dataFormulario, [name]: value });
     }
 
-    const handleClick = async () => {
+    const handleSubmit = async () => {
         event.preventDefault();
         const result = await axios.post(url, dataFormulario);
-        const dataResult = result.data; // No es necesario usar "await" aquí
+        const dataResult = result.data; 
         console.log(dataResult);
     }
 
@@ -69,7 +69,7 @@ export const Registro = () => {
                                 </div>
                                 
                                 <div className="d-flex flex-column align-items-center mt-4">
-                                    <button className="btn btn-primary mb-3 w-100" onClick={handleClick}>
+                                    <button className="btn btn-primary mb-3 w-100" onClick={ handleSubmit}>
                                         Confirmar
                                     </button>
 
